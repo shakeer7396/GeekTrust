@@ -1,0 +1,95 @@
+.price{
+    display: flex;
+    flex-direction: column;
+   gap: 0.7rem;
+}
+.product_div{
+    display: flex;
+   
+    margin: 1.5rem;
+    margin-bottom: 0rem;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.empty_cart{
+    display: grid;
+    place-items: center;
+    margin: 2rem;
+    height: 100%;
+    
+
+}
+.empty img{
+    width: 300px;
+    height: 300px;
+}
+.empty button{
+    margin-top: 1rem;
+    width: 8rem;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    background-color: #2874f0;
+    cursor: pointer;
+}
+
+.product_div button{
+    padding:0.3rem 1rem;
+    border: none;
+    color: white;
+    background-color: goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+}
+.heading{
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.main_div{
+    width: 50%;
+    min-height: 400px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.total_amount{
+    
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .main_div{
+        width: 80%;
+        min-height: 400px;
+        max-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+}
+@media all and (min-width: 320px) and (max-width: 768px) {
+
+    .main_div{
+        width: 100%;
+    }
+
+    .product_div{
+        display: flex;
+       
+        margin: 1rem;
+        margin-bottom: 0rem;
+        
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
