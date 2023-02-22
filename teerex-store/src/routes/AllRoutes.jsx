@@ -8,8 +8,8 @@ const AllRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<ProductPage/>}/>
-        <Route path='/cart' element={<CartPage/>}/>
+        <Route path='/' element={<ProductPage />} />
+        <Route path='cart' element={<CartPage />} />
       </Routes>
     </div>
   )
