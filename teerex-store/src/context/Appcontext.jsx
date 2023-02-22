@@ -7,12 +7,11 @@ const [cartData,setCartData]=useState([])
 const[productData,setProductData]=useState([])
 
 const[loading,setLoading]=useState(false)
+
  // for getting data from api GET Request 
 async function getData() {
   try {
    setLoading(true)
-   
-   
     const response = await fetch('https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json');
     const data = await response.json();
     console.log(data);
@@ -22,7 +21,6 @@ async function getData() {
     console.error('Error:', error);
     setLoading(false)
   } finally {
-    
     setLoading(false)
   }
 }
