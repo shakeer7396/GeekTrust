@@ -52,6 +52,7 @@ const ProductPage = () => {
 
     return true;
   });
+  // for color filter
   const handleColorChange = (e) => {
     if (e.target.checked) {
       setColors([...colors, e.target.value]);
