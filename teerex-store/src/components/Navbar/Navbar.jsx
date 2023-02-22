@@ -12,7 +12,7 @@ const Navbar = () => {
       <div style={{cursor:"pointer"}} onClick={()=>Navigate('/')} className={styles.image}><img src={logo} alt='err' /></div>
       <div><h1>TEEREX-STORE</h1></div>
       <div style={{display:"flex"}}>
-      <HiOutlineShoppingBag onClick={()=>Navigate("/cart")} cursor={'pointer'}   size={'1.5rem'} />     <span
+      <HiOutlineShoppingBag onClick={()=>Navigate("/cart")} cursor={'pointer'}  size={'1.5rem'} /><span
         className={styles.count}>{cartData?.length}</span></div>
     </div>
   )
