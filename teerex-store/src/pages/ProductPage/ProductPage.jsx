@@ -3,6 +3,7 @@ import { Appcontext } from "../../context/Appcontext";
 import styles from "../ProductPage/ProductPage.module.css";
 import { FcClearFilters } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
+
 const ProductPage = () => {
   const { cartData, setCartData, getData, productData, loading } =
     useContext(Appcontext);
@@ -52,6 +53,7 @@ const ProductPage = () => {
 
     return true;
   });
+
   // for color filter
   const handleColorChange = (e) => {
     if (e.target.checked) {

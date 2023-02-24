@@ -9,7 +9,7 @@ const CartPage = () => {
 const [totalPrice,setTotalprice]=useState(0)
 const Navigate=useNavigate()
 
-// for deleting data 
+// for deleting data
   const handleDelete=(id)=>{
     const choice = window.confirm("Are you sure you want to delete?");
     if(choice){
@@ -68,7 +68,6 @@ const Navigate=useNavigate()
     <div className={styles.main_div} >
     <div className={styles.heading} ><p>Shopping Cart</p></div>
     {cartData?.map((el,i)=>(
-     
       <div key={i} className={styles.product_div}>
         <img width={'70px'} src={el.imageURL} alt='err'/>
         <div className={styles.price}>
